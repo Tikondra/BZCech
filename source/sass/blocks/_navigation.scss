@@ -1,0 +1,55 @@
+.navigation__btn {
+  position: fixed;
+  top: 95px;
+  padding: 10px 30px;
+  width: 100%;
+  background-color: #222222;
+  font-family: "Century Gothic", "Tahoma", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.navigation__list {
+  @include list;
+  padding-top: 45px;
+  display: none;
+  background-color: #fff;
+
+  &--active {
+    display: block;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding: 7px 25px;
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 5px solid transparent;
+
+  &--active,
+  &:hover {
+    border-bottom: 5px solid #f6be2d;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation__btn {
+    display: none;
+  }
+
+  .navigation__list {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+
+  .navigation__link {
+    padding: 10px;
+  }
+}
+
