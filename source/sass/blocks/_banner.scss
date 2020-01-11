@@ -1,5 +1,5 @@
 .banner {
-  padding: 150px 20px;
+  padding: 20px;
 }
 
 .banner__content {
@@ -55,13 +55,36 @@
     line-height: 28px;
   }
 
-  .banner__btn {
-    flex-basis: 220px;
+  .banner__img-box {
+    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .banner {
+    padding: 180px 20px 80px;
+    margin-top: -70px;
+    background-image: url("../img/back-banner.webp");
+    background-repeat: no-repeat;
+  }
+
   .banner__content {
     @include container;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .banner__img-box {
+    grid-area: 1/2/5/2;
+  }
+
+  .banner__btn {
+    max-width: 220px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ff9100;
+    }
   }
 }

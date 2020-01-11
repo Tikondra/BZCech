@@ -1,0 +1,43 @@
+.contacts {
+  &--footer {
+    padding-top: 15px;
+  }
+}
+
+.contacts__phone {
+  padding-left: 30px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  &--footer {
+    color: #000000;
+  }
+}
+
+.contacts__adress {
+  max-width: 110px;
+  margin: 10px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+
+  &--footer {
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__phone {
+    font-size: 34px;
+  }
+
+  .contacts__adress {
+    max-width: none;
+  }
+}
