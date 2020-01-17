@@ -94,6 +94,7 @@ gulp.task('copy', function () {
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
     'source/js/**',
+    'source/css/style-39b81b53c6.css',
     'source/*.ico'
   ], {
     base: 'source'
@@ -114,5 +115,5 @@ gulp.task("js", function () {
     .pipe(gulp.dest("build/js"))
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'js', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
 gulp.task('start', gulp.series('build', 'server'));
