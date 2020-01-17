@@ -1,0 +1,143 @@
+@keyframes g {
+  0% {
+      transform: translateZ(0) rotateY(0)
+  }
+
+  to {
+      transform: translate3d(10%,10%,0) rotateY(50deg)
+  }
+}
+
+@keyframes h {
+  0% {
+      transform: translateZ(0)
+  }
+
+  to {
+      transform: translateZ(-50px)
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  padding: 20px;
+  background-color: #f7f4ef;
+}
+
+.card__header {
+  position: relative;
+  height: 70px
+}
+
+.card__header img {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  bottom: 0;
+  left: 0;
+  transition: transform .33s ease-in-out
+}
+
+.card__title {
+  color: #1d1d1d;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.card__text {
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.card__btn {
+  @include center-flex;
+  margin: auto auto 0;
+  width: 220px;
+  height: 60px;
+  box-shadow: 0 3px 5px #b6984c;
+  background-color: #f6be2d;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -30%;
+  left: 50%;
+  margin-left: -125px;
+  max-width: 250px;
+  perspective: 500px;
+  perspective-origin: 100% 50%
+}
+
+.card__face {
+  z-index: 1;
+  animation: 1s ease-in-out 1s both g;
+  height: 100%;
+  transform-style: preserve-3d
+}
+
+.card__face-image {
+  z-index: 1
+}
+
+.card__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: 1s ease-in-out 2s both h;
+  z-index: 0;
+  transform-style: preserve-3d
+}
+
+.card__link {
+  transition: top .33s ease-in-out
+}
+
+.card__link:hover .card__face-image {
+  transform: translateZ(20px)
+}
+
+.card__link:hover .card__back-image {
+  transform: translateZ(-20px)
+}
+
+.card__link:active {
+  transform: scale(1)
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 48%;
+    max-width: none;
+  }
+
+  .card__title {
+    min-height: 62px;
+  }
+
+  .card__btn {
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ff9100;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 32%;
+  }
+}
