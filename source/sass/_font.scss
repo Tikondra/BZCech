@@ -15,3 +15,11 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: PintaninaPro;
+  src:url("../fonts/PintaninaPro.woff2") format("woff2"),
+    url("../fonts/PintaninaPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal
+}

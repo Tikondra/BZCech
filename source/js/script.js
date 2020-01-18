@@ -8,3 +8,8 @@ function menu() {
 };
 
 menu();
+
+$(document).ready(function(){
+  $('.callback__input').inputmask("+7 (999) - 999 9999");
+});
+

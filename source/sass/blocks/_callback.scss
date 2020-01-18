@@ -1,6 +1,37 @@
-.callback__form {
-  max-width: 1400px;
+.callback {
+  padding: 0 20px 70px;
+  max-width: 600px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
 }
+.callback__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.callback__label {
+  width: 50%;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.callback__input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #000;
+  font-family: PintaninaPro,sans-serif;
+  background-color: transparent;
+  box-shadow: 20px 38px 34px -26px rgba(0,0,0,.2);
+  border-radius: 255px 15px 225px/15px 225px 15px 255px;
+}
+
+.callback__btn {
+  font-size: 18px;
+  line-height: 20px;
+  padding: 5px 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+

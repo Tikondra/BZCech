@@ -24,8 +24,16 @@
   flex-direction: column;
   max-width: 380px;
   padding: 20px;
-  background-color: #f7f4ef;
+  background-color: #f6f5df;
   border-radius: 20px;
+
+  &:nth-child(2) {
+    background-color: #dff6f4;
+  }
+
+  &:nth-child(3) {
+    background-color: #e7dff6;
+  }
 }
 
 .card__header {
@@ -45,6 +53,7 @@
 }
 
 .card__title {
+  margin-bottom: 0;
   color: #1d1d1d;
   font-size: 22px;
   font-weight: 700;
@@ -58,16 +67,7 @@
 }
 
 .card__btn {
-  @include center-flex;
   margin: auto auto 0;
-  width: 220px;
-  height: 60px;
-  box-shadow: 0 3px 5px #b6984c;
-  background-color: #f6be2d;
-  color: #000000;
-  font-size: 16px;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .card__link {
@@ -127,18 +127,10 @@
   .card__title {
     min-height: 62px;
   }
-
-  .card__btn {
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #ff9100;
-    }
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .card {
-    width: 32%;
+    width: 31%;
   }
 }

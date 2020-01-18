@@ -44,20 +44,20 @@
           <p class="contacts__adress">Астрахань, ул. Кирова, 87</p>
         </div>
 
-        <ul class="social social--footer">
+        <ul class="social">
           <li class="social__item">
             <a class="social__link" href="#">
-              <img src="img/vk.png" width="36" height="36" alt="БизнесЦех в Контакте">
+              <img class="social__img" src="img/vk.png" width="36" height="36" alt="БизнесЦех в Контакте">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <img src="img/facebook.png" width="36" height="36" alt="БизнесЦех в facebook">
+              <img class="social__img" src="img/facebook.png" width="36" height="36" alt="БизнесЦех в facebook">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="">
-              <img src="img/instagram.png" width="36" height="36" alt="БизнесЦех в instagram">
+              <img class="social__img" src="img/instagram.png" width="36" height="36" alt="БизнесЦех в instagram">
             </a>
           </li>
         </ul>
@@ -166,7 +166,7 @@
             </div>
             <h3 class="card__title">Таверна национальной грузинской кухни</h3>
             <p class="card__text">Уютно, вкусно, сытно и недорого — как дома</p>
-            <a class="btn" href="">Перейти на сайт</a>
+            <a class="card__btn btn" href="">Посмотреть</a>
           </li>
           <li class="portfolio__item card">
             <div class="card__header">
@@ -181,7 +181,7 @@
             </div>
             <h3 class="card__title">Автосервис «Свой мастер»</h3>
             <p class="card__text"> «Гараж на час» — самообслуживание</p>
-            <a class="btn" href="">Перейти на сайт</a>
+            <a class="card__btn btn" href="">Посмотреть</a>
           </li>
           <li class="portfolio__item card">
             <div class="card__header">
@@ -196,7 +196,7 @@
             </div>
             <h3 class="card__title">Медицинский центр «Здоровье семьи»</h3>
             <p class="card__text"></p>
-            <a class="btn" href="">Перейти на сайт</a>
+            <a class="card__btn btn" href="">Посмотреть</a>
           </li>
         </ul>
       </section>
@@ -220,13 +220,12 @@
         <form class="callback__form" method="POST" action="/call.php">
           <p>Оставьте свой номер телефона и&nbsp;наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время!</p>
 
-          <div class="form__changer">
-              <label><span class="visually-hidden">Ваш телефон</span>
-                  <input id="tel-input" type="tel" name="tel-input">
-              </label>
-          </div>
+          <label class="callback__label">
+            <span class="visually-hidden">Ваш телефон</span>
+            <input class="callback__input" id="tel-input" type="tel" name="tel-input" placeholder="+7 (___) - ___ ____" required>
+          </label>
 
-          <button class="btn" type="submit">Отправить</button>
+          <button class="callback__btn btn" type="submit">Отправить</button>
         </form>
       </section>
 
@@ -259,22 +258,24 @@
         <ul class="social social--footer">
           <li class="social__item">
             <a class="social__link" href="#">
-              <img src="img/vk.png" width="36" height="36" alt="БизнесЦех в Контакте">
+              <img class="social__img" src="img/vk.png" width="36" height="36" alt="БизнесЦех в Контакте">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <img src="img/facebook.png" width="36" height="36" alt="БизнесЦех в facebook">
+              <img class="social__img" src="img/facebook.png" width="36" height="36" alt="БизнесЦех в facebook">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="">
-              <img src="img/instagram.png" width="36" height="36" alt="БизнесЦех в instagram">
+              <img class="social__img" src="img/instagram.png" width="36" height="36" alt="БизнесЦех в instagram">
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
     <!-- <script src="js/0-15a7b4622f054e5677ca.js"></script>
     <script src="js/a-vendor-15a7b4622f054e5677ca.js"></script> -->
 </body>
