@@ -1,0 +1,44 @@
+.banner-10000 {
+  padding: 20px;
+}
+
+.banner-10000__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #222222;
+
+  span {
+    color: #daa00c;
+  }
+}
+
+.banner-10000__text {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-10000 {
+    @include container;
+    display: flex;
+    padding: 50px 20px;
+  }
+
+  .banner-10000__img {
+    order: 1;
+  }
+
+  .banner-10000__content {
+    max-width: 780px;
+  }
+
+  .banner-10000__title {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  .banner-10000__text {
+    margin-top: 20px;
+    font-size: 23px;
+  }
+}

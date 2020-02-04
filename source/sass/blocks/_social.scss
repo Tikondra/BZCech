@@ -1,13 +1,12 @@
 .social {
   @include list;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-self: stretch;
+  margin-left: auto;
 
   &--footer {
     flex-direction: row;
     align-self: center;
+    margin-left: 0;
 
     .social__svg {
       width: 29px;

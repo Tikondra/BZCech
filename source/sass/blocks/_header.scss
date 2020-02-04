@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1024px) {

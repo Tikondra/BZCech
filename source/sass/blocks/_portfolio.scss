@@ -3,7 +3,7 @@
 }
 
 .portfolio__title {
-  padding: 0 20px;
+  padding: 0 10px;
   text-align: center;
   color: #000000;
   font-size: 26px;
@@ -34,11 +34,15 @@
   }
 
   .portfolio__title {
-    max-width: 700px;
+    max-width: 710px;
     margin: auto;
     margin-bottom: 60px;
     font-size: 36px;
     line-height: 50px;
+
+    &--10 {
+      max-width: none;
+    }
   }
 
   .portfolio__item {

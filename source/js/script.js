@@ -1,9 +1,9 @@
 function menu() {
-  var menuToggle = document.querySelector('.navigation__btn');
-  var menu = document.querySelector('.navigation__list');
+  var menuToggle = document.querySelector('.navi__btn');
+  var menu = document.querySelector('.navi__list');
 
   menuToggle.addEventListener('click', function () {
-    menu.classList.toggle('navigation__list--active');
+    menu.classList.toggle('navi__list--active');
   });
 };
 

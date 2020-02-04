@@ -63,9 +63,13 @@
 @media screen and (min-width: 1024px) {
   .banner {
     padding: 120px 20px 80px;
-    margin-top: -70px;
-    background-image: url("../img/back-banner.webp");
-    background-repeat: no-repeat;
+      &--3500 {
+      padding: 20px 20px 80px;
+      margin-top: -70px;
+      background-image: url("../img/back-banner.png");
+      background-repeat: no-repeat;
+
+    }
   }
 
   .banner__content {

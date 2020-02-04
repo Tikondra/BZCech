@@ -22,7 +22,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-grow: 0;
   max-width: 380px;
+  width: 100%;
   padding: 20px;
   background-color: #f6f5df;
   border-radius: 20px;

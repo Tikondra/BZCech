@@ -37,3 +37,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+//фикс callback
+
+.callback__form {
+  .modal {
+    display: none;
+  }
+}

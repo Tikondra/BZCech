@@ -1,4 +1,4 @@
-.navigation__btn {
+.navi__btn {
   padding: 10px 30px;
   width: 100%;
   background-color: #222222;
@@ -9,9 +9,9 @@
   outline: none;
 }
 
-.navigation__list {
+.navi__list {
   @include list;
-  padding-top: 45px;
+  padding: 0 25px;
   display: none;
   background-color: #fff;
 
@@ -20,7 +20,11 @@
   }
 }
 
-.navigation__link {
+.navi__item {
+  position: relative;
+}
+
+.navi__link {
   display: block;
   padding: 7px 25px;
   color: #000000;
@@ -32,15 +36,33 @@
   &--active,
   &:hover {
     border-bottom: 5px solid #f6be2d;
+    text-decoration: none;
   }
 }
 
+.navi__sub {
+  padding-left: 30px;
+}
+
+.navi__sub-item {
+  padding: 5px 12px;
+}
+
+.navi__sub-link {
+  border-bottom: 2px solid transparent;
+}
+
+.navi__sub-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f6be2d;
+}
+
 @media screen and (min-width: 1024px) {
-  .navigation__btn {
+  .navi__btn {
     display: none;
   }
 
-  .navigation__list {
+  .navi__list {
     @include container;
     display: flex;
     justify-content: space-between;
@@ -48,8 +70,39 @@
     background-color: transparent;
   }
 
-  .navigation__link {
+  .navi__link {
     padding: 10px;
+  }
+
+  .navi__sub {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-left: 0;
+  }
+
+  .navi__item:hover{
+
+    .navi__sub {
+      display: block;
+    }
+  }
+
+  .navi__sub:hover {
+    display: block;
+  }
+
+  .navi__sub-item {
+    padding: 10px 12px;
+  }
+
+  .navi__sub-link {
+    border-bottom: 2px solid transparent;
+  }
+
+  .navi__sub-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #f6be2d;
   }
 }
 

@@ -69,8 +69,9 @@
   }
 
   .expand__description {
-    grid-area: 2/1/4/2;
+    grid-area: 1/1/5/2;
     margin-right: -50px;
+    padding-top: 50px;
   }
 
   .expand__title {
@@ -78,5 +79,12 @@
     margin-bottom: 0;
     font-size: 36px;
     line-height: 40px;
+  }
+
+  .expand__text {
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
   }
 }

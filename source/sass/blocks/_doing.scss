@@ -1,0 +1,39 @@
+.doing {
+  padding: 30px 0;
+}
+
+.doing__text-content {
+  max-width: 585px;
+  padding: 20px;
+  border-top: 2px solid #F6BE2D;
+  border-bottom: 2px solid #F6BE2D;
+}
+
+.doing__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.doing__text {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .doing {
+    @include container;
+    display: flex;
+    align-items: center;
+  }
+
+  .doing__text-content {
+    padding: 40px 20px;
+    margin-left: auto;
+  }
+
+  .doing__title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
