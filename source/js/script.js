@@ -10,6 +10,6 @@ function menu() {
 menu();
 
 $(document).ready(function(){
-  $('.callback__input').inputmask("+7 (999) 999-99-99");
+  $('.form__input--js').inputmask("+7 (999) 999-99-99");
 });
 
