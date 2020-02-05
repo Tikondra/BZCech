@@ -5,12 +5,13 @@
 }
 
 .contacts__phone {
-  padding-left: 30px;
+  display: block;
+  padding: 5px 0 5px 38px;
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
-  background-image: url("../img/phone.svg");
+  background-image: url("../img/phone2.svg");
   background-repeat: no-repeat;
   background-position: center left;
 

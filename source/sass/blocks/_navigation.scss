@@ -41,6 +41,7 @@
 }
 
 .navi__sub {
+  @include list;
   padding-left: 30px;
 }
 
@@ -49,6 +50,9 @@
 }
 
 .navi__sub-link {
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
   border-bottom: 2px solid transparent;
 }
 

@@ -23,6 +23,12 @@
 
 .social__link {
   @include center-flex;
+
+  &:hover {
+    .st0 {
+      stroke: #F6BE2D;
+    }
+  }
 }
 
 .social__img {

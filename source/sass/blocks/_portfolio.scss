@@ -17,35 +17,26 @@
 
 .portfolio__list {
   @include list;
-  padding: 20px;
+  padding: 50px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.portfolio__item {
-  margin: 130px auto 0;
-}
-
 @media screen and (min-width: 768px) {
   .portfolio {
     @include container;
-    padding: 100px 0;
+    padding: 80px 0 20px;
   }
 
   .portfolio__title {
     max-width: 710px;
     margin: auto;
-    margin-bottom: 60px;
     font-size: 36px;
     line-height: 50px;
 
     &--10 {
       max-width: none;
     }
-  }
-
-  .portfolio__item {
-    margin: 130px 0 0;
   }
 }

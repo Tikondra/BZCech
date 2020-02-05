@@ -1,8 +1,9 @@
-.banner-10000 {
+.banner-3500__content {
   padding: 20px;
 }
 
-.banner-10000__title {
+.banner-3500__title {
+  margin-top: 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -13,33 +14,36 @@
   }
 }
 
-.banner-10000__text {
+.banner-3500__text {
   font-size: 18px;
 }
 
 @media screen and (min-width: 1024px) {
-  .banner-10000 {
+  .banner-3500 {
+    background-image: url("../img/back-banner.png");
+    background-repeat: no-repeat;
+  }
+
+  .banner-3500__content {
     @include container;
     display: flex;
     align-items: center;
     padding: 50px 0;
   }
 
-  .banner-10000__img {
-    order: 1;
-  }
-
-  .banner-10000__content {
+  .banner-3500__text-content {
+    order: -1;
     max-width: 780px;
   }
 
-  .banner-10000__title {
+  .banner-3500__title {
     font-size: 46px;
     line-height: 52px;
   }
 
-  .banner-10000__text {
+  .banner-3500__text {
     margin-top: 20px;
     font-size: 23px;
+    line-height: 30px;
   }
 }
