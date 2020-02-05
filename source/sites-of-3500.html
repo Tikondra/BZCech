@@ -214,76 +214,88 @@
         </form>
       </section> -->
       <form class="form">
-        <h2 class="form__title">Узнать стоимость интернет сайта</h2>
+        <div class="form__wrapper">
+          <h2 class="form__title">Узнать стоимость интернет сайта</h2>
 
-        <div class="form__questions">
-          <label class="form__label form__label--question" for="type"><span>01</span> Какой сайт Вам нужен?</label>
-          <select class="form__select" id="type">
-            <option value="vizitka">Визитка</option>
-            <option value="v2">Вариант 2</option>
-          </select>
+          <ul class="form__questions">
+            <li class="form__questions-item">
+              <label class="form__label form__label--question" for="type"><span>01</span> Какой сайт Вам нужен?</label>
+              <select class="form__select" id="type">
+                <option value="vizitka">Визитка</option>
+                <option value="v2">Вариант 2</option>
+              </select>
+            </li>
 
-          <label class="form__label form__label--question" for="style"><span>02</span> У Вас есть свой логотип и фирменный стиль?</label>
-          <select class="form__select" id="style">
-            <option value="yes">Есть</option>
-            <option value="no">Нет</option>
-          </select>
+            <li class="form__questions-item">
+              <label class="form__label form__label--question" for="style"><span>02</span> У Вас есть свой логотип и фирменный стиль?</label>
+              <select class="form__select" id="style">
+                <option value="yes">Есть</option>
+                <option value="no">Нет</option>
+              </select>
+            </li>
 
-          <label class="form__label form__label--question" for="lvl"><span>03</span> Какой вам нужен дизайн?</label>
-          <select class="form__select" id="lvl">
-            <option value="hard">Сложный</option>
-            <option value="ease">Простой</option>
-          </select>
+            <li class="form__questions-item">
+              <label class="form__label form__label--question" for="lvl"><span>03</span> Какой вам нужен дизайн?</label>
+              <select class="form__select" id="lvl">
+                <option value="hard">Сложный</option>
+                <option value="ease">Простой</option>
+              </select>
+            </li>
+          </ul>
+
+          <div class="form__box">
+            <label class="form__label" for="name">Введите Ваше имя</label>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя">
+
+            <label class="form__label" for="phone">Введите Ваш телефон</label>
+            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер телефона">
+
+            <label class="form__label">Куда отправить коммерческое предложение?</label>
+
+            <ul class="form__radios">
+              <li>
+                <input class="visually-hidden form__radio" type="radio" name="callback" value="mail" id="email" checked>
+                <label class="form__radio-label" for="email"><span>Email</span></label>
+              </li>
+              <li>
+                <input class="visually-hidden form__radio" type="radio" name="callback" value="whatsapp" id="whatsapp">
+                <label class="form__radio-label form__radio-label--whatsapp" for="whatsapp"><span>Whatsapp</span></label>
+              </li>
+              <li>
+                <input class="visually-hidden form__radio" type="radio" name="callback" value="viber" id="viber">
+                <label class="form__radio-label form__radio-label--viber" for="viber"><span>Viber</span></label>
+              </li>
+              <li>
+                <input class="visually-hidden form__radio" type="radio" name="callback" value="telegram" id="telegram">
+                <label class="form__radio-label form__radio-label--telegram" for="telegram"><span>Telegram</span></label>
+              </li>
+            </ul>
+            <ul class="form__inputs">
+              <li class="form__inputs-item">
+                <label class="form__label" for="mail">Введите Ваш E-mail</label>
+                <input class="form__input" type="email" name="mail" id="mail" placeholder="Ваш E-mail">
+              </li>
+              <li class="form__inputs-item form__inputs-item--hide">
+                <label class="form__label" for="tel">Введите номер телефона</label>
+                <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер телефона">
+              </li>
+              <li class="form__inputs-item form__inputs-item--hide">
+                <label class="form__label" for="telega">Введите ваш Telegram</label>
+                <input class="form__input" type="text" name="telegram" id="telega" placeholder="Ссылка на телеграм">
+              </li>
+            </ul>
+          </div>
+
+          <div class="form__box2">
+            <label class="form__label" for="dop">Дополнительная информация</label>
+            <textarea class="form__text" id="dop" placeholder="Что еще нам стоит знать?"></textarea>
+            <div class="form__agree">
+              <input type="checkbox" name="agree" id="agree">
+              <label class="form__agree-text" for="agree">Я согласен на обработку персональных данных</label>
+            </div>
+            <button class="form__btn" type="submit">Отправить</button>
+          </div>
         </div>
-
-        <label class="form__label" for="name">Введите Ваше имя</label>
-        <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя">
-
-        <label class="form__label" for="phone">Введите Ваш телефон</label>
-        <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер телефона">
-
-        <label class="form__label">Куда отправить коммерческое предложение?</label>
-
-        <ul class="form__radios">
-          <li>
-            <input class="visually-hidden form__radio" type="radio" name="callback" value="mail" id="email" checked>
-            <label class="form__radio-label" for="email"><span>Email</span></label>
-          </li>
-          <li>
-            <input class="visually-hidden form__radio" type="radio" name="callback" value="whatsapp" id="whatsapp">
-            <label class="form__radio-label form__radio-label--whatsapp" for="whatsapp"><span>Whatsapp</span></label>
-          </li>
-          <li>
-            <input class="visually-hidden form__radio" type="radio" name="callback" value="viber" id="viber">
-            <label class="form__radio-label form__radio-label--viber" for="viber"><span>Viber</span></label>
-          </li>
-          <li>
-            <input class="visually-hidden form__radio" type="radio" name="callback" value="telegram" id="telegram">
-            <label class="form__radio-label form__radio-label--telegram" for="telegram"><span>Telegram</span></label>
-          </li>
-        </ul>
-        <ul class="form__inputs">
-          <li class="form__inputs-item">
-            <label class="form__label" for="mail">Введите Ваш E-mail</label>
-            <input class="form__input" type="email" name="mail" id="mail" placeholder="Ваш E-mail">
-          </li>
-          <li class="form__inputs-item form__inputs-item--hide">
-            <label class="form__label" for="tel">Введите номер телефона</label>
-            <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер телефона">
-          </li>
-          <li class="form__inputs-item form__inputs-item--hide">
-            <label class="form__label" for="telega">Введите ваш Telegram</label>
-            <input class="form__input" type="text" name="telegram" id="telega" placeholder="Ссылка на телеграм">
-          </li>
-        </ul>
-
-        <label class="form__label" for="dop">Дополнительная информация</label>
-        <textarea class="form__text" id="dop" placeholder="Что еще нам стоит знать?"></textarea>
-        <div class="form__agree">
-          <input type="checkbox" name="agree" id="agree">
-          <label class="form__agree-text" for="agree">Я согласен на обработку персональных данных</label>
-        </div>
-        <button class="form__btn" type="submit">Отправить</button>
       </form>
     </main>
     <footer class="footer">
