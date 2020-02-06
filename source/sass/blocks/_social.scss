@@ -25,8 +25,8 @@
   @include center-flex;
 
   &:hover {
-    .st0 {
-      stroke: #F6BE2D;
+    .st1 {
+      fill: #F6BE2D;
     }
   }
 }
@@ -52,7 +52,7 @@
   .social__item {
     &:not(:last-child) {
       margin-bottom: 0;
-      margin-right: 5px;
+      margin-right: 20px;
     }
   }
 }
