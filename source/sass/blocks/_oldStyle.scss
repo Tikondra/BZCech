@@ -86,16 +86,16 @@
 
 @keyframes back {
     0% {
-        background-image: url(/images/background.webp);
+        background-image: url("../images/background.webp");
     }
 
     to {
-        background-image: url(/images/back2.webp);
+        background-image: url("../images/back2.webp");
     }
 }
 
 .page-section.with-background-image.is-image-1 {
-    background-image: url(/images/section-1-bg.png);
+    background-image: url("../images/section-1-bg.png");
     background-repeat: no-repeat;
     background-position: center left;
 }
@@ -172,7 +172,7 @@
     left: 30%;
     width: 176px;
     height: 136px;
-    background-image: url(/images/head6.png);
+    background-image: url("../images/head6.png");
     animation: .4s ease-in 5s both d
 }
 
@@ -181,7 +181,7 @@
     left: 0;
     width: 292px;
     height: 93px;
-    background-image: url(/images/head1.png);
+    background-image: url("../images/head1.png");
     animation: .7s ease-in .7s both a
 }
 
@@ -190,7 +190,7 @@
     left: 0;
     width: 307px;
     height: 245px;
-    background-image: url(/images/head2.png);
+    background-image: url("../images/head2.png");
     animation: .7s ease-in 1.2s both b
 }
 
@@ -199,7 +199,7 @@
     right: 0;
     width: 271px;
     height: 154px;
-    background-image: url(/images/head3.png);
+    background-image: url("../images/head3.png");
     animation: .7s ease-in 1.8s both b
 }
 
@@ -208,7 +208,7 @@
     right: 0;
     width: 265px;
     height: 55px;
-    background-image: url(/images/head4.png);
+    background-image: url("../images/head4.png");
     animation: .7s ease-in 2.2s both c
 }
 
@@ -217,7 +217,7 @@
     right: 80px;
     width: 125px;
     height: 103px;
-    background-image: url(/images/head5.png);
+    background-image: url("../images/head5.png");
     animation: .4s ease-in 7.2s both d
 }
 
