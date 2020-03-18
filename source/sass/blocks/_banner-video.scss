@@ -1,0 +1,34 @@
+.banner-video {
+  max-width: 1170px;
+  margin: auto;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 140px;
+    height: 119px;
+    background-image: url("../img/arroy-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.banner-video__btn {
+  display: block;
+  max-width: 220px;
+  padding: 20px;
+  margin: 30px auto;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: #F6BE2D;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: saturate(#F6BE2D, 15%);
+  }
+}

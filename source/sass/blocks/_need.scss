@@ -1,0 +1,53 @@
+.need {
+  max-width: 540px;
+  margin: auto;
+}
+
+.need__content {
+  padding: 20px;
+}
+
+.need__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.need__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .need {
+    max-width: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .need__content {
+    max-width: 520px;
+
+    &--left {
+      order: -1;
+    }
+  }
+
+  .need__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .need {
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 100px 0 50px;
+  }
+
+  .need__content {
+    max-width: 570px;
+  }
+}

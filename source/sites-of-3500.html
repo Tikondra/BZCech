@@ -31,7 +31,7 @@
       <div class="header__content">
         <a class="header__logo logo" href="index.html">
           <picture class="logo-img">
-            <img src="img/logo2.svg" width="180" height="80" alt="БизнесЦех">
+            <img src="img/logo3.svg" width="180" height="80" alt="БизнесЦех">
           </picture>
         </a>
 
@@ -70,7 +70,18 @@
     </header>
     <nav class="header__navigation navi">
       <button class="navi__btn" type="button">
-        Меню
+        <span>Меню</span>
+        <svg class="ham hamRotate ham5" viewBox="0 0 100 100" width="60">
+          <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+          <path
+                class="line middle"
+                d="m 70,50 h -40" />
+          <path
+                class="line bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+        </svg>
       </button>
       <ul class="navi__list" id="menu">
         <li class="navi__item">
@@ -166,29 +177,62 @@
       </section>
       <section class="portfolio">
         <h2 class="portfolio__title">
-          Примеры наших работ стоимостью <span class="portfolio__title--span">от 3 500 ₽ до&nbsp;10&nbsp;000&nbsp;₽</span>
+          Примеры наших работ стоимостью <span class="portfolio__title--span">от&nbsp;3&nbsp;500&nbsp;₽&nbsp;до&nbsp;10&nbsp;000&nbsp;₽</span>
         </h2>
         <ul class="portfolio__list">
-          <li class="portfolio__item card">
-            <a class="card__img-link" href="devichyabashnya.ru" target="_blank" rel="nofollow noopener">
-              <img alt="Девичья башня" src="img/tower.jpg">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="http://security.bzcekh.ru/" target="_blank">
+              <img src="img/work1.jpg" width="366" height="275" alt="Охранное агентство Монарх">
             </a>
-            <h3 class="card__title">Доставка шашлыка в Астрахани</h3>
-            <a class="card__btn" href="devichyabashnya.ru" target="_blank" rel="nofollow noopener">Посмотреть</a>
+            <div class="portfolio__description">
+              <h3>Охранное агентство "Монарх"</h3>
+              <a class="portfolio__btn" href="http://security.bzcekh.ru/" target="_blank">Перейти на сайт</a>
+            </div>
           </li>
-          <li class="portfolio__item card">
-            <a class="card__img-link" href="primecarpower.ru" target="_blank" rel="nofollow noopener">
-              <img alt="Автосервис" src="img/avto.jpg">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="http://kolkheti.ru/" target="_blank">
+              <img src="img/work2.jpg" width="366" height="275" alt="Колхети">
             </a>
-            <h3 class="card__title">Автокомплекс «Прайм кар»</h3>
-            <a class="card__btn" href="primecarpower.ru" target="_blank" rel="nofollow noopener">Посмотреть</a>
+            <div class="portfolio__description">
+              <h3>Колхети</h3>
+              <a class="portfolio__btn" href="http://kolkheti.ru/" target="_blank">Перейти на сайт</a>
+            </div>
           </li>
-          <li class="portfolio__item card">
-            <a class="card__img-link" href="https://volga-delta.com/" target="_blank" rel="nofollow noopener">
-              <img alt="" src="img/volga.jpg">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="https://volga-delta.com/" target="_blank">
+              <img src="img/work3.jpg" width="366" height="275" alt="Волга дельта">
             </a>
-            <h3 class="card__title">«Волга-Дельта»</h3>
-            <a class="card__btn" href="https://volga-delta.com/" target="_blank" rel="nofollow noopener">Посмотреть</a>
+            <div class="portfolio__description">
+              <h3>Волга дельта</h3>
+              <a class="portfolio__btn" href="https://volga-delta.com/" target="_blank">Перейти на сайт</a>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="http://metall.fabricant.ru/" target="_blank">
+              <img src="img/work4.jpg" width="366" height="275" alt="Фабрикант">
+            </a>
+            <div class="portfolio__description">
+              <h3>Фабрикант</h3>
+              <a class="portfolio__btn" href="http://metall.fabricant.ru/" target="_blank">Перейти на сайт</a>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="https://delivery.devichyabashnya.ru/" target="_blank">
+              <img src="img/work5.jpg" width="366" height="275" alt="Девичья башня">
+            </a>
+            <div class="portfolio__description">
+              <h3>Девичья башня</h3>
+              <a class="portfolio__btn" href="https://delivery.devichyabashnya.ru/" target="_blank">Перейти на сайт</a>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="https://atmosfera-sluha.ru/" target="_blank">
+              <img src="img/work6.jpg" width="366" height="275" alt="Атмосфера слуха">
+            </a>
+            <div class="portfolio__description">
+              <h3>Атмосфера слуха</h3>
+              <a class="portfolio__btn" href="https://atmosfera-sluha.ru/" target="_blank">Перейти на сайт</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -214,15 +258,18 @@
           <ul class="form__questions">
             <li class="form__questions-item">
               <label class="form__label form__label--question" for="type"><span>01</span> Какой сайт Вам нужен?</label>
-              <select class="form__select" id="type">
-                <option value="vizitka">Визитка</option>
-                <option value="v2">Вариант 2</option>
+              <select class="form__select" id="type" name="type">
+                <option value="vizitka">Сайт-визитка</option>
+                <option value="portfolio">Сайт-портфолио</option>
+                <option value="corporativ">Корпоративный сайт</option>
+                <option value="vitrina">Витрина магазина</option>
+                <option value="shop">Интернет магазин</option>
               </select>
             </li>
 
             <li class="form__questions-item">
               <label class="form__label form__label--question" for="style"><span>02</span> У Вас есть свой логотип и фирменный стиль?</label>
-              <select class="form__select" id="style">
+              <select class="form__select" id="style" name="style">
                 <option value="yes">Есть</option>
                 <option value="no">Нет</option>
               </select>
@@ -230,7 +277,7 @@
 
             <li class="form__questions-item">
               <label class="form__label form__label--question" for="lvl"><span>03</span> Какой вам нужен дизайн?</label>
-              <select class="form__select" id="lvl">
+              <select class="form__select" id="lvl" name="lvl">
                 <option value="hard">Сложный</option>
                 <option value="ease">Простой</option>
               </select>
@@ -287,9 +334,9 @@
 
           <div class="form__box2">
             <label class="form__label" for="dop">Дополнительная информация</label>
-            <textarea class="form__text" id="dop" placeholder="Что еще нам стоит знать?"></textarea>
+            <textarea class="form__text" id="dop" placeholder="Что еще нам стоит знать?" name="info"></textarea>
             <div class="form__agree">
-              <input type="checkbox" name="agree" id="agree" required>
+              <input type="checkbox" name="agree" id="agree" required checked disabled>
               <label class="form__agree-text" for="agree"><a class="form__agree-link" href="pravila.html" target="_blank">Я согласен на обработку персональных данных</a></label>
             </div>
             <button class="form__btn" type="submit">Отправить</button>
@@ -301,7 +348,7 @@
       <div class="footer__content">
         <a class="logo logo--footer" href="index.html">
           <picture class="logo-img">
-            <img src="img/logo2.svg" width="180" height="80" alt="БизнесЦех">
+            <img src="img/logo3.svg" width="180" height="80" alt="БизнесЦех">
           </picture>
         </a>
 
@@ -349,6 +396,15 @@
         </ul>
       </div>
     </footer>
+    <template id="success"> <!-- submit -->
+      <div class="success">
+        <p class="success__title">Спасибо!</p>
+        <p class="success__text">Мы получили Ваш сообщение. Наш менеджер свяжется с вами в ближайшее время!</p>
+        <svg class="success__svg" viewbox="0 0 48 48" width="80" height="80">
+          <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="transparent"/>
+        </svg>
+      </div>
+    </template>
     <script src="js/libs.min.js"></script>
     <script src="js/script.js"></script>
 </body>

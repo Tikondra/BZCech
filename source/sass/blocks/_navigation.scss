@@ -1,4 +1,20 @@
+.navi {
+  position: relative;
+  z-index: 10;
+
+  &--fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+
 .navi__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 30px;
   width: 100%;
   background-color: #222222;
@@ -69,6 +85,14 @@
     top: 0;
     z-index: 100;
     background-color: white;
+
+    &--smm {
+      background-color: #f4f9ff;
+    }
+
+    &--dir {
+      background-color: #eef1f8;
+    }
   }
 
   .navi__btn {

@@ -1,0 +1,73 @@
+.banner-dir {
+  margin-top: -218px;
+  background-color: #eef1f8;
+}
+
+.banner-dir__wrapper {
+  padding: 20px;
+  padding-top: 220px;
+}
+
+.banner-dir__title {
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 700;
+}
+
+.banner-dir__text {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.banner-dir__btn {
+  display: block;
+  max-width: 284px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  background-color: #F6BE2D;
+  box-shadow: 0 3px 5px #b6984c;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ff9100;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-dir__wrapper {
+    padding: 350px 20px 100px;
+    background-image: url("../img/banner-direct.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .banner-dir__content {
+    max-width: 480px;
+  }
+
+  .banner-dir__title {
+    font-size: 46px;
+    margin-bottom: 0;
+  }
+
+  .banner-dir__text {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-dir__wrapper {
+    padding: 300px 20px 100px;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .banner-dir__text {
+    margin-bottom: 50px;
+  }
+}

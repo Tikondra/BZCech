@@ -1,0 +1,39 @@
+.works__title {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.works__list {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.works__item {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .works__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .works__list {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .works__title {
+    margin-bottom: 50px;
+  }
+
+  .works__item {
+    margin: 10px;
+  }
+}

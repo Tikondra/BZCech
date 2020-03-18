@@ -1,0 +1,36 @@
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  user-select: none;
+}
+
+.navi__btn--activ .hamRotate {
+  transform: rotate(90deg);
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#fff;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+.ham5 .top {
+  stroke-dasharray: 40 82;
+}
+
+.ham5 .bottom {
+  stroke-dasharray: 40 82;
+}
+
+.navi__btn--activ .ham5 .top {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}
+
+.navi__btn--activ .ham5 .bottom {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}

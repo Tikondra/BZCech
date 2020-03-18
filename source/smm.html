@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -32,7 +31,7 @@
     <div class="header__content">
       <a class="header__logo logo" href="index.html">
         <picture class="logo-img">
-          <img src="img/logo2.svg" width="180" height="80" alt="БизнесЦех">
+          <img src="img/logo3.svg" width="180" height="80" alt="БизнесЦех">
         </picture>
       </a>
 
@@ -69,9 +68,20 @@
       </ul>
     </div>
   </header>
-  <nav class="header__navigation navi">
+  <nav class="header__navigation navi navi--smm">
     <button class="navi__btn" type="button">
-      Меню
+      <span>Меню</span>
+      <svg class="ham hamRotate ham5" viewBox="0 0 100 100" width="60">
+        <path
+              class="line top"
+              d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+        <path
+              class="line middle"
+              d="m 70,50 h -40" />
+        <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+      </svg>
     </button>
     <ul class="navi__list" id="menu">
       <li class="navi__item">
@@ -119,17 +129,69 @@
     </ul>
   </nav>
   <main>
-    <section class="content" style="max-width: 1170px; margin: 100px auto;">
-      <h1 style="font-size: 36px; line-height: 42px;">Social media marketing (SMM). Ведение групп и&nbsp;реклама в&nbsp;социальных сетях</h1>
-      <p>Ведение групп в&nbsp;социальных сетях. Сегодня, для многих пользователей, социальная сеть является полноценным интернетом. Другими словами интернет для многих ограничивается лишь одной социальной сетью.</p>
-      <p>У&nbsp;них там друзья, родственники, связь, все важные события, новости, полезные группы, развлечения, контакты. Поэтому игнорируя представительство в&nbsp;социальных сетях Вы&nbsp;лишаете свой бизнес огромного количества потенциальных клиентов.</p>
-      <p>Но&nbsp;и&nbsp;простое выкладывание постов само по&nbsp;себе не&nbsp;принесет никаких результатов. Более того, только публикация даже интересных постов не&nbsp;даст ощутимый результат. Здесь как и&nbsp;в&nbsp;любом другом месте необходима реклама. Но&nbsp;в&nbsp;отличии от&nbsp;других рекламных площадок, настройка показа рекламы здесь гораздо точнее. Огромное множество инструментов настройки и&nbsp;аналитики позволяют выбрать наиболее оптимальную стратегию продвижения.</p>
-      <p>Представительство в&nbsp;социальных сетях также обязывает постоянное общение со&nbsp;своими подписчиками, сообщения которых нельзя игнорировать и&nbsp;откладывать на&nbsp;долго. Необходимо постоянно мониторить и&nbsp;сообщения в&nbsp;директ и&nbsp;абсолютно все комментарии оставленные под всеми Вашими постами.</p>
-      <p>Мы&nbsp;долго можем говорить про социальные сети, оставьте заявку и&nbsp;мы&nbsp;расскажем про них Вам.</p>
+    <section class="banner-smm">
+      <h1 class="banner-smm__title">Social media marketing (SMM)</h1>
+      <p class="banner-smm__text">Ведение групп и&nbsp;реклама в&nbsp;социальных сетях</p>
+      <a class="banner-smm__btn scroll-to" href="#form">Начать SMM продвижение</a>
+    </section>
+    <section class="need">
+      <picture>
+        <source srcset="img/need.webp" type="image/webp">
+        <img src="img/need.jpg" width="" height="" alt="social">
+      </picture>
+      <div class="need__content">
+        <h2 class="need__title">Нужен-ли вам СММ?</h2>
+        <p class="need__text">
+          Сегодня, для многих пользователей, социальная сеть является полноценным интернетом. Другими словами интернет для многих ограничивается лишь одной социальной сетью.
+        </p>
+        <p class="need__text">
+          У них там друзья, родственники, связь, все важные события, новости, полезные группы, развлечения, контакты. Поэтому игнорируя представительство в&nbsp;социальных сетях Вы&nbsp;лишаете свой бизнес огромного количества потенциальных клиентов
+        </p>
+      </div>
+    </section>
+    <section class="need">
+      <picture>
+        <source srcset="img/smm2.webp" type="image/webp">
+        <img src="img/smm2.jpg" width="597" height="452" alt="">
+      </picture>
+      <div class="need__content need__content--left">
+        <h2 class="need__title">Почему самостоятельное продвижение не всегда эффективно</h2>
+        <p class="need__text">
+          Но и простое выкладывание постов само по себе не принесет никаких результатов. Более того, только публикация даже интересных постов не даст ощутимый результат. Здесь как и в любом другом месте необходима реклама. Но в отличии от других рекламных площадок, настройка показа рекламы здесь гораздо точнее. Огромное множество инструментов настройки и аналитики позволяют выбрать наиболее оптимальную стратегию продвижения
+        </p>
+      </div>
+    </section>
+    <section class="need">
+      <picture>
+        <source srcset="img/smm3.webp" type="image/webp">
+        <img src="img/smm3.jpg" width="" height="" alt="">
+      </picture>
+      <div class="need__content">
+        <h2 class="need__title">Круглосуточный мониторинг ваших соцсетей</h2>
+        <p class="need__text">
+          Представительство в социальных сетях также обязывает постоянное общение со своими подписчиками, сообщения которых нельзя игнорировать и откладывать на долго. Необходимо постоянно мониторить и сообщения в директ и абсолютно все комментарии оставленные под всеми Вашими постами
+        </p>
+      </div>
+    </section>
+    <section class="works">
+      <h2 class="works__title">Примеры ведения инcтаграма</h2>
+      <ul class="works__list">
+        <li class="works__item">
+          <iframe src="https://averin.pro/widget.php?l=taverna.kolkheti&style=1&width=310&gallery=1&s=100&icc=3&icr=3&t=0&tt=Мы в Инстаграм&h=1&ttcolor=FFFFFF&th=c3c3c3&bw=f9f9f9&bscolor=FFFFFF&bs=ff6600&ts=Посмотреть&ch=utf8" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:310px; height: 450px" ></iframe>
+        </li>
+        <li class="works__item">
+          <iframe src="https://averin.pro/widget.php?l=ginekolog_astra&style=1&width=310&gallery=1&s=100&icc=3&icr=3&t=0&tt=Мы в Инстаграм&h=1&ttcolor=FFFFFF&th=c3c3c3&bw=f9f9f9&bscolor=FFFFFF&bs=ff6600&ts=Посмотреть&ch=utf8" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:310px; height: 450px" ></iframe>
+        </li>
+        <li class="works__item">
+          <iframe src="https://averin.pro/widget.php?l=restorandevichyabashnya&style=1&width=310&gallery=1&s=100&icc=3&icr=3&t=0&tt=Мы в Инстаграм&h=1&ttcolor=FFFFFF&th=c3c3c3&bw=f9f9f9&bscolor=FFFFFF&bs=ff6600&ts=Посмотреть&ch=utf8" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:310px; height: 450px" ></iframe>
+        </li>
+      </ul>
     </section>
     <form class="form" method="POST" action="call.php" id="form">
       <div class="form__wrapper">
-        <h2 class="form__title">Узнать стоимость интернет сайта</h2>
+        <h2 class="form__title">
+          Мы долго можем говорить про социальные сети, оставьте заявку и мы расскажем про них Вам
+        </h2>
 
         <div class="form__box">
           <label class="form__label" for="name">Введите Ваше имя</label>
@@ -181,21 +243,21 @@
 
         <div class="form__box2">
           <label class="form__label" for="dop">Дополнительная информация</label>
-          <textarea class="form__text" id="dop" placeholder="Что еще нам стоит знать?"></textarea>
+          <textarea class="form__text" id="dop" placeholder="Опишите о вашей деятельности подробнее: ваш товар, вашу ЦА, Ваше УТП и все что сочтете нужным"></textarea>
           <div class="form__agree">
-            <input type="checkbox" name="agree" id="agree" required>
+            <input type="checkbox" name="agree" id="agree" required checked disabled>
             <label class="form__agree-text" for="agree"><a class="form__agree-link" href="pravila.html" target="_blank">Я согласен на обработку персональных данных</a></label>
           </div>
           <button class="form__btn" type="submit">Отправить</button>
         </div>
       </div>
     </form>
-    </main>
-    <footer class="footer">
+  </main>
+  <footer class="footer">
     <div class="footer__content">
       <a class="logo logo--footer" href="index.html">
         <picture class="logo-img">
-          <img src="img/logo2.svg" width="180" height="80" alt="БизнесЦех">
+          <img src="img/logo3.svg" width="180" height="80" alt="БизнесЦех">
         </picture>
       </a>
 
@@ -243,6 +305,15 @@
       </ul>
     </div>
   </footer>
+  <template id="success"> <!-- submit -->
+    <div class="success">
+      <p class="success__title">Спасибо!</p>
+      <p class="success__text">Мы получили Ваш сообщение. Наш менеджер свяжется с вами в ближайшее время!</p>
+      <svg class="success__svg" viewbox="0 0 48 48" width="80" height="80">
+        <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="transparent"/>
+      </svg>
+    </div>
+  </template>
   <script src="js/libs.min.js"></script>
   <script src="js/script.js"></script>
 </body>
